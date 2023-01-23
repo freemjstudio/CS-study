@@ -17,5 +17,6 @@ Paging and Segmentation
 
 ## 데이터베이스 
 
-이상, 정규화   
+[이상](https://github.com/freemjstudio/CS-study/blob/main/Anomaly_%EC%9D%B4%EC%83%81%ED%98%84%EC%83%81.md)
+정규화   
 트랜잭션, 로킹   
