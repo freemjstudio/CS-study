@@ -45,7 +45,7 @@
 ## 제 3 정규형 (3NF)
 
 * 2NF를 만족해야 한다. (== 제1정규형 + 제2정규형을 우선 만족하는 상태). 
-* 기본키를 제외한 속성들 간 이행 종속성(Transitive Dependency)이 없어야 한다. 
+* 속성들 간 이행 종속성(Transitive Dependency)이 없어야 한다. 
 * 이행 종속성 : A→B 이고 B→C 일때 A→C가 성립하는 상태를 이행 종속성이라고 한다.  
 ![image](https://user-images.githubusercontent.com/41604678/213977960-ac4e5239-4cbd-4977-a9a9-0a32e553cf7b.png)   
 
