@@ -39,7 +39,14 @@
 * 2NF를 만족해야 한다. (== 제1정규형 + 제2정규형을 우선 만족하는 상태). 
 * 기본키를 제외한 속성들 간 이행 종속성(Transitive Dependency)이 없어야 한다. 
 * 이행 종속성 : A→B 이고 B→C 일때 A→C가 성립하는 상태를 이행 종속성이라고 한다.  
+![image](https://user-images.githubusercontent.com/41604678/213977960-ac4e5239-4cbd-4977-a9a9-0a32e553cf7b.png)
+위의 경우, ID를 알면 등급을 알 수 있고, 등급을 알면 할인율을 알 수 있다.  
+![image](https://user-images.githubusercontent.com/41604678/213978058-bf53b09d-8421-4971-8034-59f83c826cf7.png)  
+즉, ID -> 등급, 등급 -> 할인율이며 ID -> 할인율 이라는 이행 종속성이 발생한다. 
 
+3NF를 만족하기 위해서 다음과 같이 릴레이션을 분해한다.
+![image](https://user-images.githubusercontent.com/41604678/213978161-053b2573-d610-45fb-b2a4-e7536637d1d2.png)  
+![image](https://user-images.githubusercontent.com/41604678/213978172-cab5b98d-cf8c-4892-850d-6e51f4c39ed4.png)  
 
 
 ## BCNF (Boyce-Codd Normal Form)
