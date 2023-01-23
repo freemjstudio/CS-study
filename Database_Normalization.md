@@ -39,8 +39,10 @@
 * 2NF를 만족해야 한다. (== 제1정규형 + 제2정규형을 우선 만족하는 상태). 
 * 기본키를 제외한 속성들 간 이행 종속성(Transitive Dependency)이 없어야 한다. 
 * 이행 종속성 : A→B 이고 B→C 일때 A→C가 성립하는 상태를 이행 종속성이라고 한다.  
-![image](https://user-images.githubusercontent.com/41604678/213977960-ac4e5239-4cbd-4977-a9a9-0a32e553cf7b.png)
+![image](https://user-images.githubusercontent.com/41604678/213977960-ac4e5239-4cbd-4977-a9a9-0a32e553cf7b.png)   
+
 위의 경우, ID를 알면 등급을 알 수 있고, 등급을 알면 할인율을 알 수 있다.  
+
 ![image](https://user-images.githubusercontent.com/41604678/213978058-bf53b09d-8421-4971-8034-59f83c826cf7.png)  
 즉, ID -> 등급, 등급 -> 할인율이며 ID -> 할인율 이라는 이행 종속성이 발생한다. 
 
@@ -53,10 +55,23 @@
 
 * 제 3 정규형을 더 강화한 정규화 과정이다. 함수적 종속성에 의해 발생하는 모든 중복을 제거한다.  
 * 모든 결정자가 후보키 집합에 속해야 한다. 이것을 달리 말하면, 후보키 집합에 없는 컬럼이 결정자가 되면 안된다는 의미이다. 결정자는 (a→b 에서 a를 의미함)
-  
-예시에서는 지도교수가 과목의 결정자가 되어버리며, 지도교수는 기본키 (후보키) 집합에 속하지 않으므로 BCNF를 만족하지 않는다. 
+
+다음과 같은 테이블이 있다고 하자. 
+![image](https://user-images.githubusercontent.com/41604678/213978308-5e8ae204-6846-4fd8-a613-ecc399a03774.png)   
+
+이 테이블에서 PK는 학번과 과목이며, 학번과 과목을 알면 담당교수를 조회할 수 있다.  
+![image](https://user-images.githubusercontent.com/41604678/213978592-10241b8d-b644-40d3-83df-78ab4f3ba90b.png)   
+
+과목을 알면 담당교수를 알 수 있는 것처럼 과목이 담당교수를 결정하는 것같지만,  
+![image](https://user-images.githubusercontent.com/41604678/213978650-2e2337ea-3440-48ee-ab76-0e42d9f32089.png)  
+같은 과목 (알고리즘)을 가르치는 담당교수가 여러명 존재할 수 있으므로 과목 -> 담당교수를 만족시키지 않는다.  
+
+반면 담당교수를 알면 이 교수가 어떤 과목을 담당하는지 알 수 있다.  
+![image](https://user-images.githubusercontent.com/41604678/213978716-ded52423-d8df-4e7a-9d2f-21c9b1eb12cf.png)  
+즉, 이 테이블에서 담당교수가 과목의 결정자가 되어버리며, 지도교수는 기본키 (후보키) 집합에 속하지 않으므로 BCNF를 만족하지 않는다.
 
 BCNF 정규형을 만족시키려면 다음과 같이 분해해야 한다. 
+![image](https://user-images.githubusercontent.com/41604678/213978795-8db39219-d279-4d8b-a50a-5dcbf8da023e.png)  
 
 ## 반정규화 
 
