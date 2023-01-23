@@ -20,5 +20,7 @@ Paging and Segmentation
 [이상 현상(Anomaly)](https://github.com/freemjstudio/CS-study/blob/main/Anomaly_%EC%9D%B4%EC%83%81%ED%98%84%EC%83%81.md)  
 정규화   
 트랜잭션, 로킹
+
+
 [데이터베이스 키의 종류](https://github.com/freemjstudio/CS-study/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%ED%82%A4%EC%9D%98%20%EC%A2%85%EB%A5%98.md)
    
