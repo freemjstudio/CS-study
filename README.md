@@ -1,5 +1,6 @@
 # CS-study
 Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
+![image](https://user-images.githubusercontent.com/41604678/214046755-c5adac70-15ef-4c8b-9f70-b81d1fd7b78e.png)
 
 ## 운영체제 
 프로세스와 스레드  
