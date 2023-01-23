@@ -48,7 +48,7 @@
 
 3NF를 만족하기 위해서 다음과 같이 릴레이션을 분해한다.  
 
-![image](https://user-images.githubusercontent.com/41604678/213978161-053b2573-d610-45fb-b2a4-e7536637d1d2.png)  
+![image](https://user-images.githubusercontent.com/41604678/213978161-053b2573-d610-45fb-b2a4-e7536637d1d2.png) 
 ![image](https://user-images.githubusercontent.com/41604678/213978172-cab5b98d-cf8c-4892-850d-6e51f4c39ed4.png)  
 
 
