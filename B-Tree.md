@@ -17,9 +17,13 @@
 ### Node Structure   
 
 ![image](https://user-images.githubusercontent.com/41604678/215308290-d08de45d-f672-42ce-b701-119ae17c21a0.png)
+- Ki 는 search-key value를 나타낸다. 
+- Pi 는 non-leaf node의 경우 child node 를 가리키는 pointer이며, leaf node인 경우 records 또는 record bucket 을 가리키는 pointer이다. 
+- Pn 은 linked list 처럼 next node를 가리킨다. 
 
 ### B+Tree 자료 특징 
 
+![image](https://user-images.githubusercontent.com/41604678/215308857-f286205f-3375-4bd3-a649-6fa0cf027be8.png)
 
 - root node 에서 leaf node가는 path 는 모두 같은 길이를 가진다. 
 - root node 는 반드시 2개 이상의 children node 를 가져야 한다. 
@@ -27,9 +31,30 @@
 위의 예시에서는 n=6 이므로 leaf node는 반드시 3개이상 5개 이하의 value를 가져야 한다.  
 - Root node가 아닌 Non-leaf node 는 반드시 (n/2) ~ n 개의 children node를 가져야 한다. 
 위의 예시에서는 3 개이상 6개 이하의 자식 노드를 가져야 한다. 
-
+  
 ### B+Tree Insertion 
+- Before Insertion of 'Adams'
+![image](https://user-images.githubusercontent.com/41604678/215308870-7ea881e2-0799-45fb-af0a-dd2d9e0c1063.png)
+
+- After Insertion of 'Adams'
+![image](https://user-images.githubusercontent.com/41604678/215308884-d5a65524-c15d-45bc-9cb9-6d29e7ed8d72.png)
 
 ### B+Tree Deletion 
+- Before Deletion of 'Srinivasan'
+![image](https://user-images.githubusercontent.com/41604678/215308965-a482016f-0755-4d4c-83b4-bdebb7974f56.png)
 
-### B+Tree 
+- After Deletion of 'Srinivasan'
+![image](https://user-images.githubusercontent.com/41604678/215308915-90e75b19-4734-4b84-936c-b7d7f2caa396.png)
+
+
+### B+Tree File Organization 
+
+![image](https://user-images.githubusercontent.com/41604678/215308991-a3fc4571-214f-4afd-a1d3-688fe7ea5f3e.png)
+
+- B+Tree File Organization 에서 leaf node들은 pointer 대신 record를 저장한다. 
+- 삽입/삭제/변경이 일어나도 record 데이터들을 clustered 된 상태로 유지한다. 
+- leaf node들은 절반 이상 데이터들로 차 있어야 한다. (half-full)
+- B+Tree Index와 유사하게 동작한다. 
+
+--------
+자료 출처 : Database Concepts 7th Edition 
