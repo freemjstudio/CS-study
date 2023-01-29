@@ -55,6 +55,7 @@
 ![image](https://user-images.githubusercontent.com/41604678/215308915-90e75b19-4734-4b84-936c-b7d7f2caa396.png)
 
 (search-key-value, pointer) 쌍을 b+tree에서 삭제하는 경우이다. (search-key-value, pointer)를 leaf node에서 삭제해야 한다. 단, 삭제 이후에 node가 너무 적은 entries를 가지게 되면, 이웃한 노드와 merge한다.  
+위의 경우에도 'Sirinivasan' 을 삭제한 후 node에는 'Wu' 하나만 남는데, 위의 트리에서는 n=4 이므로 적어도 한 leaf node에 값이 2개 이상 들어가야 한다. 따라서 이웃 노드에 남은 'Wu' 를 merge 한다. 
 * leaf node는 반드시 (n-1)/2 ~ (n-1) 개의 value를 가져야 한다 라는 특성을 참고 ! 
   
   
