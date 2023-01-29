@@ -33,12 +33,20 @@
 위의 예시에서는 3 개이상 6개 이하의 자식 노드를 가져야 한다. 
   
 ### B+Tree Insertion 
-- Before Insertion of 'Adams'
-![image](https://user-images.githubusercontent.com/41604678/215308870-7ea881e2-0799-45fb-af0a-dd2d9e0c1063.png)
+
+- Before Insertion of 'Adams'  
+
+![image](https://user-images.githubusercontent.com/41604678/215308870-7ea881e2-0799-45fb-af0a-dd2d9e0c1063.png)  
+
 
 - After Insertion of 'Adams'
 ![image](https://user-images.githubusercontent.com/41604678/215308884-d5a65524-c15d-45bc-9cb9-6d29e7ed8d72.png)
-
+  
+ (search-key-value, pointer) 쌍을 index b+tree에 삽입하는 경우이다. 부모 노드가 가득 차 있는 상태이면, 부모 노드를 split 한다.   
+ 위의 예시에서 Adams가 삽입되어야 할 노드에 이미 값이 가득 차 있는 상태여서, 'Califieri'와 'Crick'를 split하고 이 둘을 새로운 Node에 추가한다.   
+ 또한 이 새로운 node를 찾을 수 있도록 하기 위해서 Parents 노드에 califieri 를 업데이트 해 준다.   
+   
+   
 ### B+Tree Deletion 
 - Before Deletion of 'Srinivasan'
 ![image](https://user-images.githubusercontent.com/41604678/215308965-a482016f-0755-4d4c-83b4-bdebb7974f56.png)
@@ -46,7 +54,10 @@
 - After Deletion of 'Srinivasan'
 ![image](https://user-images.githubusercontent.com/41604678/215308915-90e75b19-4734-4b84-936c-b7d7f2caa396.png)
 
-
+(search-key-value, pointer) 쌍을 b+tree에서 삭제하는 경우이다. (search-key-value, pointer)를 leaf node에서 삭제해야 한다. 단, 삭제 이후에 node가 너무 적은 entries를 가지게 되면, 이웃한 노드와 merge한다.  
+* leaf node는 반드시 (n-1)/2 ~ (n-1) 개의 value를 가져야 한다 라는 특성을 참고 ! 
+  
+  
 ### B+Tree File Organization 
 
 ![image](https://user-images.githubusercontent.com/41604678/215308991-a3fc4571-214f-4afd-a1d3-688fe7ea5f3e.png)
@@ -56,5 +67,7 @@
 - leaf node들은 절반 이상 데이터들로 차 있어야 한다. (half-full)
 - B+Tree Index와 유사하게 동작한다. 
 
+  
+    
 --------
 자료 출처 : Database Concepts 7th Edition 
