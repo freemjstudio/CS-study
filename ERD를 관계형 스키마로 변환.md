@@ -20,7 +20,7 @@ E-R database schema -> relation schema
 
         선 표현 대신 cardinality limits 표현으로 participation constrain을 의미할 수도 있음
         
-![img1 daumcdn](https://user-images.githubusercontent.com/42952074/215305097-15f9b736-286c-4148-95cd-0a417d58205d.png)
+![img1 daumcdn](https://user-images.githubusercontent.com/42952074/215409706-46f2b4ae-c3bc-4b0f-a6ed-d81f50c9602f.png)
         
         0..*에서 최소 0번이니까 모든 엔티티가 참여하는 것은 아님 -> partial
 
