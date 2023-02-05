@@ -11,6 +11,9 @@ DDL의 종류로는 CREATE, ALTER, DROP, TRUNCATE 가 있다. 그리고 DDL의 �
 
 
 ### 1. TABLE 관련 DDL 
+
+1) CREATE : 테이블 생성 
+
 ```sql
 CREATE TABLE 테이블 명(
   컬럼이름 데이터타입 제약조건, 
@@ -18,13 +21,44 @@ CREATE TABLE 테이블 명(
   ...
 );
 
-CREATE TABLE student(
+CREATE TABLE Student(
   id VARCHAR(20) PRIMARY KEY,
   name VARCHAR(20) UNIQUE,
   birthday CHAR(8) NOT NULL, 
   sex CHAR(1) CHECK (sex ='M' OR sex ='W')
 )
 ```
+
+2) ALTER : 테이블 수정 
+
+* 컬럼 추가하기 (ADD)
+```sql
+ALTER TABLE 테이블 명 ADD 컬럼명 데이터타입 [제약조건];
+ALTER TABLE Student ADD phone VARCHAR(15) UNIQUE;
+
+```
+* 컬럼 삭제하기 (DELETE)
+```sql
+ALTER TABLE 테이블 명 DELETE 컬럼명 데이터타입 [제약조건];
+ALTER TABLE Student DELETE phone VARCHAR(15) UNIQUE;
+```
+
+* 컬럼 수정하기 (MODIFY)
+```sql
+ALTER TABLE 테이블 명 MODIFY 컬럼명 데이터타입 [제약조건];
+ALTER TABLE Student MODIFY name VARCHAR(30) NOT NULL;
+```
+
+3) DROP : 테이블 삭제 
+```sql
+DROP TABLE 테이블 명 [CASCADE|RESTRICT];
+```
+
+CASCADE 는 해당 테이블을 참조하는 테이블까지 연쇄적으로 삭제하는 옵션이고, RESTRICT는 다른 테이블이 삭제하려는 테이블을 참조중이면 제거하지 않는 옵션이다. 
+
+4) TRUNCATE : 테이블 내의 데이터 삭제 
+
+
 
 ### 2. VIEW 관련 DDL
 
