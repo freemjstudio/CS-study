@@ -50,6 +50,7 @@ ALTER TABLE Student MODIFY name VARCHAR(30) NOT NULL;
 ```
 
 #### 3) DROP : 테이블 삭제 
+
 ```sql
 DROP TABLE 테이블 명 [CASCADE|RESTRICT];
 ```
@@ -57,6 +58,7 @@ DROP TABLE 테이블 명 [CASCADE|RESTRICT];
 CASCADE 는 해당 테이블을 참조하는 테이블까지 연쇄적으로 삭제하는 옵션이고, RESTRICT는 다른 테이블이 삭제하려는 테이블을 참조중이면 제거하지 않는 옵션이다. 
 
 #### 4) TRUNCATE : 테이블 내의 데이터 삭제 
+
 ```sql
 TRUNCATE TABLE 테이블 명;
 ```
@@ -80,13 +82,53 @@ SELECT id, name
 DROP VIEW 뷰이름;
 ```
 
-### 3. INDEX 관련 DDL 
+### 3. INDEX 관련 DDL  
 #### 1) CREATE : INDEX 생성
 ```sql
 CREATE [UNIQUE] INDEX 인덱스명 ON 테이블명(컬럼명1, 컬럼명2, ..);
 ```
+
 #### 2) ALTER : 인덱스를 수정하는 명령어 but 일부 DBMS에서는 이 기능을 제공하지 않으며, 제공된다고 하더라도 기존 인덱스를 삭제하고 다시 생성하는 방법이 권장된다. 
+```sql
+ALTER [UNIQUE] INDEX 인덱스명 ON 테이블명(컬럼명1, 컬럼명2, ..);
+```
+
+#### 3) DROP : INDEX 삭제 
+```sql
+DROP INDEX 인덱스이름;
+```
 
 ## DML (Data Manipulation Language) 
+데이터베이스에 저장된 데이터들을 입력, 수정, 삭제, 조회하는 언어이다. INSERT, SELECT, DELETE, UPDATE가 있다. 
+
+#### 1) SELECT
+* ALL : 모든 튜플 검색 
+* DISTINCT : 중복된 속성들이 조회되는 경우 한개만 검색
+* GROUP BY : 속성값을 그룹으로 분류할 때 
+* HAVING절 : GROUP BY에 의해 분류한 후 그룹에 대한 조건 지정 
+* ORDER BY : 속성값 정렬 옵션으로는 ASC(오름차순), DESC(내림차순)이 있다. 
+* WHERE 절 : 검색할 조건 기술 
+
+2) INSERT : 데이터를 테이블에 삽입
+```sql
+INSERT INTO 테이블명(속성명1, 속성명2, ...)
+VALUES (데이터1, 데이터2, ...); 
+```
+속성과 데이터의 개수, 데이터 타입이 일치해야 함
+
+3) DELETE : 데이터 내용 삭제 
+```sql
+DELETE FROM 테이블명
+WHERE 조건;
+```
+4) UPDATE
+```sql
+UPDATE 테이블명
+   SET 속성명=데이터, ...
+WHERE 조건;
+```
+WHERE절이 만족할때만 데이터 값을 변경함 
 
 ## DCL (Data Control Language)
+1) GRANT 
+2) REVOKE 
