@@ -109,6 +109,31 @@ DROP INDEX 인덱스이름;
 * ORDER BY : 속성값 정렬 옵션으로는 ASC(오름차순), DESC(내림차순)이 있다. 
 * WHERE 절 : 검색할 조건 기술 
 
+* 서브쿼리 (Sub-Query)
+SQL문 안에 포함된 또 다른 SQL문이다. 서브쿼리에 사용되는 정보는 메인쿼리의 컬럼 정보를 사용할 수 있으나 역은 성립하지 않음. 
+
+a. FROM 절 Sub-Query
+인라인 뷰 (Inline View) 라고도 불림
+[도서]
+책번호 | 책명
+111  | 운영체제
+222  | 자료구조 
+333  | 컴퓨터구조
+
+[도서가격]
+
+```sql
+SELECT MAX(가격)
+  FROM 도서가격 A, 
+    (SELECT 책번호 
+     FROM  도서
+     WHERE 책명='자료구조') B
+  WHERE A.책번호 = B.책번호 
+```
+
+b. WHERE 절 Sub-Query
+중첩 서브쿼리라고도 불림 
+
 #### 2) INSERT : 데이터를 테이블에 삽입
 ```sql
 INSERT INTO 테이블명(속성명1, 속성명2, ...)
