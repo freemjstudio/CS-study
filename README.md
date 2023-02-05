@@ -24,4 +24,4 @@ Paging and Segmentation
 [데이터베이스 인덱스](https://github.com/freemjstudio/CS-study/blob/main/Index%20in%20Database.md)    
 [데이터베이스 B+Tree](https://github.com/freemjstudio/CS-study/blob/main/B-Tree.md)   
 [데이터베이스 DDL DCL DML](https://github.com/freemjstudio/CS-study/blob/main/Database_SQL.md) 
-[데이터베이스 JOIN 연산]
+[데이터베이스 JOIN 연산 & SQL 집합 연산](https://github.com/freemjstudio/CS-study/blob/main/JOIN%EC%97%B0%EC%82%B0.md)
