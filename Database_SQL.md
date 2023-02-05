@@ -111,9 +111,7 @@ DROP INDEX 인덱스이름;
 
 #### 서브쿼리 (Sub-Query)
 SQL문 안에 포함된 또 다른 SQL문이다. 서브쿼리에 사용되는 정보는 메인쿼리의 컬럼 정보를 사용할 수 있으나 역은 성립하지 않음. 
-
-a. FROM 절 Sub-Query
-인라인 뷰 (Inline View) 라고도 불림   
+ 
 [도서]  
 |책번호|책명|
 |----|---|
@@ -131,6 +129,9 @@ a. FROM 절 Sub-Query
 
 
 #### Q. 자료구조 책의 가격을 조회하는 쿼리문은 ? 
+
+#### a. FROM 절 Sub-Query : 인라인 뷰 (Inline View) 라고도 불림  
+
 ```sql
 SELECT MAX(가격)
   FROM 도서가격 A, 
@@ -140,8 +141,7 @@ SELECT MAX(가격)
   WHERE A.책번호 = B.책번호 
 ```
 
-b. WHERE 절 Sub-Query
-중첩 서브쿼리라고도 불림 
+#### b. WHERE 절 Sub-Query : 중첩 서브쿼리라고도 불림 
 ```sql
 SELECT MAX(가격)
   FROM 도서가격
