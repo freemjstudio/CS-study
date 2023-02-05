@@ -92,7 +92,7 @@ UNION
 SELECT 책번호 
 FROM 도서가격
 WHERE 가격 >= 15000
-```sql
+```
 
 |책번호|
 |----|
