@@ -1,0 +1,36 @@
+## DDL (Data Definition Language)
+
+데이터 정의어는 데이터를 정의하는 명령어이다. 데이터를 담는 그릇을 정의하는 언어라고 이해할 수 있다. 즉, TABLE과 같은 데이터 구조를 정의하는데 사용되는 명령어들이다. 
+DDL의 종류로는 CREATE, ALTER, DROP, TRUNCATE 가 있다. 그리고 DDL의 대상으로는 도메인, 스키마, 테이블, 뷰, 인덱스가 있다. 
+
+* 도메인 (Domain) : 하나의 속성이 가질 수 있는 원자값들의 집합 
+* 스키마 (Schema): 데이터베이스의 구조, 제약 조건등의 정보를 담고 있는 기본적인 구조 
+* 테이블 (Table) : 데이터의 저장 공간 
+* 뷰 (View) : 물리 테이블에서 유도하는 가상의 테이블 
+* 인덱스 (Index) : 자료검색을 빠르게 하기 위한 데이터 구조 
+
+
+### 1. TABLE 관련 DDL 
+```sql
+CREATE TABLE 테이블 명(
+  컬럼이름 데이터타입 제약조건, 
+  컬럼이름 데이터타입 제악조건,
+  ...
+);
+
+CREATE TABLE student(
+  id VARCHAR(20) PRIMARY KEY,
+  name VARCHAR(20) UNIQUE,
+  birthday CHAR(8) NOT NULL, 
+  sex CHAR(1) CHECK (sex ='M' OR sex ='W')
+)
+```
+
+### 2. VIEW 관련 DDL
+
+
+### 3. INDEX 관련 DDL 
+
+## DML (Data Manipulation Language) 
+
+## DCL (Data Control Language)
