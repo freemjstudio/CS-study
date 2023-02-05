@@ -22,5 +22,5 @@ Paging and Segmentation
 트랜잭션, 로킹   
 [데이터베이스 키의 종류](https://github.com/freemjstudio/CS-study/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%ED%82%A4%EC%9D%98%20%EC%A2%85%EB%A5%98.md)     
 [데이터베이스 인덱스](https://github.com/freemjstudio/CS-study/blob/main/Index%20in%20Database.md)    
-[데이터베이스 B+Tree](https://github.com/freemjstudio/CS-study/blob/main/B-Tree.md). 
-[데이터베이스 SQL]
+[데이터베이스 B+Tree](https://github.com/freemjstudio/CS-study/blob/main/B-Tree.md)   
+[데이터베이스 SQL]()
