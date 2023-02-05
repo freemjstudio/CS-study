@@ -109,19 +109,19 @@ DROP INDEX 인덱스이름;
 * ORDER BY : 속성값 정렬 옵션으로는 ASC(오름차순), DESC(내림차순)이 있다. 
 * WHERE 절 : 검색할 조건 기술 
 
-2) INSERT : 데이터를 테이블에 삽입
+#### 2) INSERT : 데이터를 테이블에 삽입
 ```sql
 INSERT INTO 테이블명(속성명1, 속성명2, ...)
 VALUES (데이터1, 데이터2, ...); 
 ```
 속성과 데이터의 개수, 데이터 타입이 일치해야 함
 
-3) DELETE : 데이터 내용 삭제 
+#### 3) DELETE : 데이터 내용 삭제 
 ```sql
 DELETE FROM 테이블명
 WHERE 조건;
 ```
-4) UPDATE
+#### 4) UPDATE
 ```sql
 UPDATE 테이블명
    SET 속성명=데이터, ...
@@ -130,5 +130,14 @@ WHERE 조건;
 WHERE절이 만족할때만 데이터 값을 변경함 
 
 ## DCL (Data Control Language)
-1) GRANT 
-2) REVOKE 
+#### 1) GRANT : 사용자에게 권한을 부여 
+
+```sql
+GRANT 권한 ON 테이블 TO 사용자;
+```
+
+#### 2) REVOKE : 사용자에게 부여했던 권한을 회수 
+
+```sql
+REVOKE 권한 ON 테이블 FROM 사용자;
+```
