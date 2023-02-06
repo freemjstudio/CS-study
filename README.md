@@ -25,3 +25,6 @@ Paging and Segmentation
 [데이터베이스 B+Tree](https://github.com/freemjstudio/CS-study/blob/main/B-Tree.md)   
 [데이터베이스 DDL DCL DML](https://github.com/freemjstudio/CS-study/blob/main/Database_SQL.md)   
 [데이터베이스 JOIN 연산 & SQL 집합 연산](https://github.com/freemjstudio/CS-study/blob/main/JOIN%EC%97%B0%EC%82%B0.md)
+[데이터베이스 Log based Recovery](https://guttural-tumble-39b.notion.site/Log-based-Recovery-cb8564629d3048379553791be9fb15f6)
+[데이터베이스 트랜젝션의 Rollback, Recoverability](https://guttural-tumble-39b.notion.site/Rollback-Recoverability-1adab05f101f4262939ef17ec6864c13)
+
