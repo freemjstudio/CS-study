@@ -1,7 +1,7 @@
 # CS-study
 Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 
-## 운영체제 
+## Operating System 
 프로세스와 스레드  
 프로세스의 주소공간  
 인터럽트  
@@ -15,7 +15,7 @@ Race Condition
 Paging and Segmentation   
 페이지 교체 알고리즘   
 
-## 데이터베이스 
+## Database 
 
 [이상 현상(Anomaly)](https://github.com/freemjstudio/CS-study/blob/main/Anomaly_%EC%9D%B4%EC%83%81%ED%98%84%EC%83%81.md)  
 [정규화 (Normalization)](https://github.com/freemjstudio/CS-study/blob/main/Database_Normalization.md)   
@@ -28,3 +28,4 @@ Paging and Segmentation
 [데이터베이스 Log based Recovery](https://guttural-tumble-39b.notion.site/Log-based-Recovery-cb8564629d3048379553791be9fb15f6)	   
 [데이터베이스 트랜젝션의 Rollback, Recoverability](https://guttural-tumble-39b.notion.site/Rollback-Recoverability-1adab05f101f4262939ef17ec6864c13)
 
+## Network
