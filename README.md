@@ -9,10 +9,10 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 [PCB(Process Control Block)](https://www.notion.so/PCB-Process-Control-Block-ecfb1facd7ba4c4690efb8ab4bb8d360)
 [CPU 스케줄링](https://www.notion.so/CPU-Scheduling-13a5a3fd84c34578b49a5798c8aaccd7)   
 [IPC(Inter Process Communication)](https://www.notion.so/IPC-Inter-Process-Communication-df3b8bf7fffd415faee8f62c124b0cfd)
-Deadlock  
-Race Condition   
-세마포어 & 뮤텍스   
-Paging and Segmentation   
+[Deadlock](https://www.notion.so/Deadlock-2e8529d9a01140a68a478da8c987aa27) 
+[Race Condition](https://www.notion.so/Race-Condition-41d7a19617ee45ce88d9557e47821d4b)  
+[세마포어 & 뮤텍스](https://www.notion.so/Semaphore-Mutex-08e5687dd25f4d9fb806b9aebd7419b4)   
+[Paging and Segmentation](https://www.notion.so/Paging-and-Segmentation-8ab4bd02916d4a478e1764c87a5adb59)   
 페이지 교체 알고리즘   
 
 ## Database 
