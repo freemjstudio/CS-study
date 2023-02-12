@@ -13,7 +13,7 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 [Race Condition](https://www.notion.so/Race-Condition-41d7a19617ee45ce88d9557e47821d4b)  
 [세마포어 & 뮤텍스](https://www.notion.so/Semaphore-Mutex-08e5687dd25f4d9fb806b9aebd7419b4)   
 [Paging and Segmentation](https://www.notion.so/Paging-and-Segmentation-8ab4bd02916d4a478e1764c87a5adb59)   
-페이지 교체 알고리즘   
+[페이지 교체 알고리즘](https://github.com/freemjstudio/CS-study/blob/main/%ED%8E%98%EC%9D%B4%EC%A7%80%20%EA%B5%90%EC%B2%B4%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)   
 
 ## Database 
 
