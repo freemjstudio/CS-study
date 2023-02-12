@@ -31,5 +31,5 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 
 ## Network
 
-[TLS/SSL]
+[TLS/SSL](https://github.com/freemjstudio/CS-study/blob/main/SSL_TLS.md)
 
