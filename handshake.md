@@ -26,13 +26,16 @@
     
     응답 확인. 패킷을 받았다는 것을 의미한다.
     
-    - Acknowledgement Number 필드가 유효한지를 나타낸다.
+    Acknowledgement Number 필드가 유효한지를 나타낸다.
     
     양단 프로세스가 쉬지 않고 데이터를 전송한다고 가정하면 최초 연결 설정 과정에서 전송되는 첫 번째 세그먼트를 제외한 모든 세그먼트의 ACK 비트는 1로 지정된다고 생각할 수 있다.
     
     - FIN(Finish) / 000001
     
-    연결 해제. 세션 연결을 종료시킬 때 사용되며, 더 이상 전송할 데이터가 없음을 의미한다.
+    연결 해제. 세션 연결을 종료시킬 때 사용되며, 더 이상 전송할 데이터가 없음을 의미한다.<br/>
+
+
+<br/>
 <br/>
 
 ## TCP의 3-Way Handshake
@@ -44,6 +47,9 @@
    양쪽 모두 데이터를 전송할 준비가 되었다는 것을 보장하고, 실제로 데이터 전달이 시작하기 전에 한 쪽이 다른 쪽이 준비되었다는 것을 알 수 있도록 한다.
     
    즉, TCP/IP 프로토콜을 이용해서 통신을 하는 응용 프로그램이 데이터를 전송하기 전에 먼저 정확한 전송을 보장하기 위해 상대방 컴퓨터와 사전에 세션을 수립하는 과정을 의미한다.
+   
+![images_averycode_post_22a2bab1-c8dd-4559-88b2-62d03cbff927_기술면접-5](https://user-images.githubusercontent.com/42952074/218461853-c1c46453-d5ab-46ef-8d1c-04750bfba809.jpg)
+
    
    step 1 (SYN)
 
@@ -87,7 +93,13 @@
   
   ⇒ 이를 통해 full-duplex 통신이 구축됩니다.
   
-  STEP1 (Client → Server : FIN(+ACK)
+## TCP의 4-Way Handshake
+
+3-Way handshake는 TCP의 연결을 초기화 할 때 사용한다면, 4-Way handshake는 세션을 종료하기 위해 수행되는 절차다.
+
+![images_averycode_post_3ec34c06-3d54-45f3-a6fb-bc5bfb415001_기술면접-6 2](https://user-images.githubusercontent.com/42952074/218461706-f0df0e23-8e4f-4b08-b02f-31cc17256bff.jpg)
+
+ STEP1 (Client → Server : FIN(+ACK)
 
     서버와 클라이언트가 연결된 상태에서 클라이언트가 close()를 호출하여 접속을 끊는다.(으려한다.)
     
@@ -114,6 +126,8 @@ STEP4 (Client → Server : ACK)
     클라이언트는 FIN을 받고, 확인했다는 ACK를 서버에게 보낸다.
     
     아직 서버로부터 받지 못한 데이터가 있을 수 있으므로 TIME_WAIT을 통해 기다린다. (실질적인 종료과정 CLOSED에 들어가게 된다.)
+    
+    (Server에서 FIN을 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 FIN패킷보다 늦게 도착하는 패킷 등을 기다리는 것)
     
     이때 TIME_WAIT 상태는 의도치 않은 에러로 인해 연결이 데드락으로 빠지는 것을 방지
     
