@@ -31,5 +31,5 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 
 ## Network
 
-[TLS/SSL Protocol](https://github.com/freemjstudio/CS-study/blob/main/SSL_TLS.md)
+[TLS/SSL Protocol](https://github.com/freemjstudio/CS-study/blob/main/SSL_TLS.md)   
 [HTTP의 버전 별 발전과정, HTTP/0.9, 1.0, 1.1, 2.0, 3.0](https://guttural-tumble-39b.notion.site/HTTP-HTTP2-0-5aaa9b70eeac43498cf41cddf1410dc2)	
