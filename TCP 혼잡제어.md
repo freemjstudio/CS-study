@@ -11,10 +11,11 @@ reliable network 를 보장하는 것은 4가지 문제점이 있다.
 
 <img src="https://user-images.githubusercontent.com/41604678/219958762-518b8e79-3614-4291-995f-6df493446ed1.png" width="800">
 
-y축 : congestion window size 
-x축 : time 
+* x축 : time   
+* y축 : congestion window size   
 
-혼잡제어는 3가지 main phase로 구성되어 있다. 
+
+혼잡제어는 3가지 main phase로 구성되어 있다.   
 
 ### 1. Slow Start
 전송 속도를 천천히 늘려가며 네트워크 혼잡 상태를 확인한다. Slow Start는 CongWin이 Threshold 에 도달하기 이전까지 진행된다. 천천히 데이터 양을 늘려가는 이유는 현재 네트워크의 상태를 알지 못하기 때문이다. Slow Start의 단점은 전송 속도를 늘리는데 너무 오래걸린다는 점이다. 이를 해결하기 위해서 패킷이 잘 도착했을 때 그 다음 패킷을 전송할 때에는 window size 를 2배씩 늘린다. 이때 데이터를 보내는 양의 단위는 MSS (Maximum Segment Size)이며, 500Byte이다. 즉, 맨 처음 혼잡제어에 따라 slow start를 시작할 때의 window size는 1 MSS라고 이해할 수 있다. 그리고 전송이 잘 되었다는 의미로 ACK를 받으면 window size가 2배가 되는 것이다. 
