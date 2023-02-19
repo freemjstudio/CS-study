@@ -9,7 +9,8 @@ reliable network 를 보장하는 것은 4가지 문제점이 있다.
 
 이 문제들 중, 3) 에 해당하는 네트워크 혼잡 문제를 해결하기 위해 송신측 데이터 전달과 네트워크 데이터 처리 속도의 차이를 해결하기 위한 방법이 혼잡제어이다. 
 
-<img src="https://user-images.githubusercontent.com/41604678/219958762-518b8e79-3614-4291-995f-6df493446ed1.png" width="800">
+
+<img src="https://user-images.githubusercontent.com/41604678/219961192-790c9c5d-fd4b-4be5-bc8b-4562ae641b2f.png" width="800">
 
 * x축 : time   
 * y축 : congestion window size   
