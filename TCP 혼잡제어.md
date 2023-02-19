@@ -26,6 +26,16 @@ Congestion Window Size가 Threshold 지점을 넘어서게 되면, Additive Incr
 ### 3. Multiplicative Decrease
 Additive Increase 구간에서 Pakcet Loss가 발생하면 congestion window size를 다시 1 MSS로 줄이고, Threshold지점은 Packet Loss가 일어난 지점의 Congestion Window Size의 1/2 지점으로 재설정한다. 
 
+### TCP Series 1 Tahoe vs TCP Series 2 Reno 의 비교 
+TCP Series 2 Reno는 TCP Series 1 Tahoe의 혼잡제어 문제점을 개선했다. 
+TCP Series 1 Tahoe는 Packet Loss가 발생한 시점을 기준으로 window size를 1 MSS로 급격하게 줄이고 있다. 그런데 Packet Loss가 검출되는 경우는 2가지가 있다. 
+
+1) Time Out : 정해진 시간 동안 아무런 패킷을 받지 못한 상태
+2) 3 duplicate ACK : 동일한 ACK 넘버를 3번 이상 받게 되어 패킷이 제대로 보내지지 않은 상태. 송신측에서는 패킷 재전송을 한다. 
+
+그런데 3 duplicate ACK는 패킷이 오고 가는 상태이지만 Time Out은 아무것도 받지 못하는 상태로, Time Out이 발생하는 상황의 네트워크 상태가 더 혼잡하다고 간주할 수 있다. 기존의 TCP Series 1 Tahoe에서는 이 두가지 경우에 대한 차이를 두지 않았으나, Reno에서는 Time Out이 발생한 경우에만 window size 를 1MSS로 급격하게 줄이고 있다. 반면 3 duplicate ACK 에 의해 발견된 Packet Loss 상황에서는 window size를 1/2줄인 후 Additive Increase를 시작한다. 두가지 다 threshold는 Packet Loss가 발생한 시점의 window size 크기의 1/2로 줄이는 것은 동일하다. 
+
+
 Q. 왜 데이터 전송량을 늘릴때는 linear 하게 늘리고 threshold에 도달해서 전송량을 줄일 때는 급격하게 줄이는가?
 A. 네트워크는 공유자원이기 때문이다. 네트워크가 혼잡상태여서 막히게 되면 전송 문제가 해결되지 않는다. 따라서 혼잡 문제를 해결하기 위해서 전송량을 급격히 줄이는 것이며, 혼잡 상태를 방지하기 위하여 전송량을 linear하게 늘려가는 것이다. 
 
