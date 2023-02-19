@@ -16,14 +16,14 @@ x축 : time
 
 혼잡제어는 3가지 main phase로 구성되어 있다. 
 
-#### 1. Slow Start
+### 1. Slow Start
 전송 속도를 천천히 늘려가며 네트워크 혼잡 상태를 확인한다. Slow Start는 CongWin이 Threshold 에 도달하기 이전까지 진행된다. 천천히 데이터 양을 늘려가는 이유는 현재 네트워크의 상태를 알지 못하기 때문이다. Slow Start의 단점은 전송 속도를 늘리는데 너무 오래걸린다는 점이다. 이를 해결하기 위해서 패킷이 잘 도착했을 때 그 다음 패킷을 전송할 때에는 window size 를 2배씩 늘린다. 이때 데이터를 보내는 양의 단위는 MSS (Maximum Segment Size)이며, 500Byte이다. 즉, 맨 처음 혼잡제어에 따라 slow start를 시작할 때의 window size는 1 MSS라고 이해할 수 있다. 그리고 전송이 잘 되었다는 의미로 ACK를 받으면 window size가 2배가 되는 것이다. 
 
 
-#### 2. Additive Increase
+### 2. Additive Increase
 Congestion Window Size가 Threshold 지점을 넘어서게 되면, Additive Increase 구간에 도달한다. 이는 linear하게 window size를 늘려가는 것이다. 
 
-#### 3. Multiplicative Decrease
+### 3. Multiplicative Decrease
 Additive Increase 구간에서 Pakcet Loss가 발생하면 congestion window size를 다시 1 MSS로 줄이고, Threshold지점은 Packet Loss가 일어난 지점의 Congestion Window Size의 1/2 지점으로 재설정한다. 
 
 Q. 왜 데이터 전송량을 늘릴때는 linear 하게 늘리고 threshold에 도달해서 전송량을 줄일 때는 급격하게 줄이는가?
@@ -35,7 +35,7 @@ A. 네트워크라는 것은 공유 자원이며, 네트워크 상태에 따라 
 * 참고 : 맨 처음 theshold는 어떻게 지정해 주는 것일까 ? -> 사실 맨 처음, 이전의 네트워크 상태에 대한 정보 없이 threshold가 어디인지는 알 수 없다. 직접 데이터를 전송해 보며 packet loss 상태에 도달하기 전까지 확인하거나 threshold를 임의로 지정해주게 될 것이다. 
 
 
-#### 데이터 전송 속도 
+### 데이터 전송 속도 
 전송 속도를 수식으로 표현하면 다음과 같다. 
 
 <img src="https://user-images.githubusercontent.com/41604678/219958765-d72cca74-2ee4-44ee-ac9c-b6d0d634ecb9.png" width="500">  
