@@ -38,8 +38,8 @@ A. 네트워크라는 것은 공유 자원이며, 네트워크 상태에 따라 
 #### 데이터 전송 속도 
 전송 속도를 수식으로 표현하면 다음과 같다. 
 
-![image](https://user-images.githubusercontent.com/41604678/219958765-d72cca74-2ee4-44ee-ac9c-b6d0d634ecb9.png)
-<img src="https://user-images.githubusercontent.com/41604678/219958765-d72cca74-2ee4-44ee-ac9c-b6d0d634ecb9.png" width="500">
+<img src="https://user-images.githubusercontent.com/41604678/219958765-d72cca74-2ee4-44ee-ac9c-b6d0d634ecb9.png" width="500">  
+
 전송 속도의 단위는 bps(Bytes per Sec) 이고, CongWin 는 Congestion Window 의 사이즈, RTT는 Round Trip Time으로 송신지부터 목적지까지 패킷이 왕복하는 시간이다. 
 각각의 요소 중에서는 실제로는 Congestion Window 의 변화가 많다. 따라서, 데이터의 전송 속도(rate)는 Congestion Window의 사이즈에 따라 좌우된다. 그리고 이 Congestion Window의 사이즈를 결정하는 것은 네트워크의 상태이다. 네트워크의 상태가 혼잡하지 않다면, Congestion Window의 사이즈를 늘릴것이기 때문이다. 
 즉, 네트워크가 전송속도를 결정한다.
