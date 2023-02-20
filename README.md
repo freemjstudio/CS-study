@@ -34,5 +34,5 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 [TLS/SSL Protocol](https://github.com/freemjstudio/CS-study/blob/main/SSL_TLS.md)   
 [HTTP의 버전 별 발전과정, HTTP/0.9, 1.0, 1.1, 2.0, 3.0](https://guttural-tumble-39b.notion.site/HTTP-HTTP2-0-5aaa9b70eeac43498cf41cddf1410dc2)	  
 [3 Way Handshake](https://github.com/freemjstudio/CS-study/blob/main/handshake.md).        
-[TCP 혼잡제어](https://github.com/freemjstudio/CS-study/blob/main/TCP%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4.md)		
-[TCP 흐름제어(https://guttural-tumble-39b.notion.site/TCP-285eb7121b384041ac578deb9be1df63)		
+[TCP 혼잡제어](https://github.com/freemjstudio/CS-study/blob/main/TCP%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4.md)    
+[TCP 흐름제어](https://guttural-tumble-39b.notion.site/TCP-285eb7121b384041ac578deb9be1df63)		
