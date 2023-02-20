@@ -36,3 +36,4 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 [3 Way Handshake](https://github.com/freemjstudio/CS-study/blob/main/handshake.md).        
 [TCP 혼잡제어](https://github.com/freemjstudio/CS-study/blob/main/TCP%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4.md)    
 [TCP 흐름제어](https://guttural-tumble-39b.notion.site/TCP-285eb7121b384041ac578deb9be1df63)		
+[OSI](https://www.notion.so/OSI-7-91baba6e38d2413d974f5ab60c66fed3?pvs=4)
