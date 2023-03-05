@@ -37,4 +37,5 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 [TCP 혼잡제어](https://github.com/freemjstudio/CS-study/blob/main/TCP%20%ED%98%BC%EC%9E%A1%EC%A0%9C%EC%96%B4.md)    
 [TCP 흐름제어](https://guttural-tumble-39b.notion.site/TCP-285eb7121b384041ac578deb9be1df63)<br/>		
 [OSI](https://assorted-event-85e.notion.site/OSI-7-91baba6e38d2413d974f5ab60c66fed3)
-[서브넷팅과 IP 클래스](https://sinclairstudio.tistory.com/465)
+[IP Class](https://sinclairstudio.tistory.com/465)
+[서브넷팅(Subnetting)과 슈퍼넷팅(Supernetting)](https://sinclairstudio.tistory.com/466)
