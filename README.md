@@ -38,5 +38,5 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 [TCP 흐름제어](https://guttural-tumble-39b.notion.site/TCP-285eb7121b384041ac578deb9be1df63)<br/>		
 [OSI](https://assorted-event-85e.notion.site/OSI-7-91baba6e38d2413d974f5ab60c66fed3)                
 [IP Class](https://sinclairstudio.tistory.com/465)        
-[서브넷팅(Subnetting)과 슈퍼넷팅(Supernetting)](https://sinclairstudio.tistory.com/466) 
+[서브넷팅(Subnetting)과 슈퍼넷팅(Supernetting)](https://sinclairstudio.tistory.com/466)
 [공유기의 원리](https://www.notion.so/f73c733edd0a4beea1ff8750f584c9c0?pvs=4)
