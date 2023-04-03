@@ -50,3 +50,4 @@ Computer Science 주요과목 개념을 정리하는 레포지토리 입니다.
 
 ## 컴퓨터 구조  
 [CPU의 구성요소](https://www.notion.so/freemjstudio/CPU-7f85b8be65ba480b9717074e76fdf972?pvs=4)<br/>
+[메모리의 구조(Memory Structure)](https://www.notion.so/freemjstudio/Memory-Structure-dec2ae84ab0347a49a5c3ad8dcc1ab6a?pvs=4)<br/>
